@@ -1,13 +1,15 @@
-package tw.escuela.notas;
+package tw.escuela.notas.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class nuevoalumnoActivity extends AppCompatActivity {
+import tw.escuela.notas.R;
+
+public class nuevocursoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nuevoalumno);
+        setContentView(R.layout.activity_nuevocurso);
     }
 }

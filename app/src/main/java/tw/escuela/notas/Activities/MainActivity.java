@@ -10,11 +10,15 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    Conexion con;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        con = new Conexion(this,"bd",null,1);
     }
 
     public void onClick(View view) {
@@ -31,8 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btnAlumnos:
-                //i = new Intent (MainActivity.this,planillaActivity.class);
-                Toast.makeText(getApplicationContext(),"Alumnos", Toast.LENGTH_LONG).show();
+                i = new Intent (MainActivity.this,nuevoalumnoActivity.class);
                 break;
 
             case R.id.btnCursos:
